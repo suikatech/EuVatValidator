@@ -93,7 +93,7 @@ class EuVATValidator
 				}
 				break;
 			case "CY":
-				if (preg_match("/^CY[0-9]{8}L/", $vatNumberFull) != 1)
+				if (preg_match("/^CY1[0-9]{7}[A-Z]{1}/", $vatNumberFull) != 1)
 				{
 					return false;
 				}
